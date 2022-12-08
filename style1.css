@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-color: gainsboro;
+}
+
+.topbar {
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  box-shadow: 0 0 10px rgba(19, 159, 209, 0.777);
+
+  display: flex;
+}
+.topbar.topbar-agat {
+  background-color: rgb(7, 242, 26);
+  color: white;
+}
+.topbar.topbar-agat {
+  background-color: rgb(105, 49, 196);
+  color: blue;
+
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav .nav-item .nav-link {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: blue;
+}
+.nav .nav-item .nav-link:hover {
+  color: rgb(0, 0, 130);
+}
+.nav .nav-item.active .nav-link {
+  background-color: blue;
+  color: white;
+}
+
+.nav.nav-agat .nav-item .nav-link {
+  color: white;
+}
+.nav.nav-agat .nav-item .nav-link:hover {
+  color: rgb(216, 216, 216);
+}
+.nav.nav-agat .nav-item.active .nav-link {
+  background-color: white;
+  color: rgb(228, 36, 36);
+}
+
+.nav.nav-orange .nav-item .nav-link {
+  color: rgb(27, 153, 69);
+  text-transform: uppercase;
+}
+.nav.nav-orange .nav-item .nav-link:hover {
+  color: rgb(109, 109, 109);
+}
+.nav.nav-orange.nav-item.active .nav-link {
+  background-color: blue;
+  color: red;
+}
+
+.topbar.topbar-skew {
+  padding: 0;
+}
+.nav.nav-skew {
+  margin-left: 15px;
+}
+.nav.nav-skew .nav-item {
+  border-radius: 0;
+  color: tomato;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.471);
+  padding: 20px 25px; 
+  background: white;
+  transform: skewX(-20deg);
+}
+.nav.nav-skew .nav-item:hover {
+  background: linear-gradient(45deg, white, rgb(182, 182, 182));
+}
+.nav.nav-skew .nav-item.active {
+  background: linear-gradient(45deg, tomato, rgb(188, 64, 41));
+}
+.nav.nav-skew .nav-item .nav-link {
+  transform: skewX(20deg);
+  background: none;
+  padding: 0;
+  color: tomato;
+}
+.nav.nav-skew .nav-item.active .nav-link {
+  color: white;
+}
